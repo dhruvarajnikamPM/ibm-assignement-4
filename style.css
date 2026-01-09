@@ -1,0 +1,144 @@
+:root {
+    --primary: #4f46e5;
+    --bg-color: #f3f4f6;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --card-bg: #ffffff;
+    --success-bg: #dcfce7;
+    --success-text: #166534;
+    --error-bg: #fee2e2;
+    --error-text: #991b1b;
+    --border-color: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: --bg-color;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 40px 20px;
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #111827;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: var(--text-muted);
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--primary);
+}
+
+button.active {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.table-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f9fafb;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    font-weight: 600;
+    padding: 16px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+}
+
+.completed {
+    background-color: var(--success-bg) !important;
+    color: var(--success-text);
+    transition: background-color 0.3s;
+}
+
+.completed td {
+    border-bottom-color: rgba(22, 101, 52, 0.1);
+}
+
+.uncompleted {
+    background-color: var(--error-bg) !important;
+    color: var(--error-text);
+    transition: background-color 0.3s;
+}
+
+.uncompleted td {
+    border-bottom-color: rgba(153, 27, 27, 0.1);
+}
+
+
+td button {
+    background-color: white;
+    color: var(--text-main);
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+td button:hover {
+    background-color: #f3f4f6;
+    color: var(--primary);
+}
+

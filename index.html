@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h2>Task Management Dashboard</h2>
+        </header>
+
+        <div class="controls">
+            <button id="allBtn" class="active">All Tasks</button>
+            <button id="completedBtn">Completed</button>
+            <button id="uncompletedBtn">Uncompleted</button>
+        </div>
+
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="todoBody"></tbody>
+            </table>
+       
+
+    <script src="script.js"></script>
+</body>
+
+</html>
